@@ -1,0 +1,108 @@
+    1  ip -a
+    2  ip a
+    3  exit
+    4  sudo su
+    5  docker info
+    6  sudo su
+    7  sudo su
+    8  docker container run --publish 80:80 --detach nginx
+    9  docker ps
+   10  docker inspect ee430780c51
+   11  curl -i 172.17.0.3
+   12  docker images
+   13  docker image inspect nginx
+   14  docker pull httpd:2.4
+   15  docker images
+   16  docker system prune
+   17  docker run -d --name webserver1 httpd
+   18  docker ps -a
+   19  docker images
+   20  docker exec -it webserver1
+   21  docker exec -it webserver1 bash
+   22  docker run -dit --name cloudnloud-web -p 8087:80 -v /var/tmp/:/usr/local/apache2/htdocs/ httpd:2.4
+   23  docker images
+   24  docker ps -a
+   25  cd /var/tmp/
+   26  ls -ltr
+   27  echo "Hello Senthil" > index.html
+   28  ls ltr
+   29  ls -ltr
+   30  docker run -dit --name cloudnloud-web1 -P -v /var/tmp/:/usr/local/apache2/htdocs/ httpd:2.4
+   31  docker run -dit --name cloudnloud-web2 -P -v /var/tmp/:/usr/local/apache2/htdocs/ httpd:2.4
+   32  docker ps -a
+   33  sudo su
+   34  docker ps -a
+   35  docker rm $(docker ps -a -f status=Exited)
+   36  docker rm$(docker ps -a -f status=Exited)
+   37  docker ps -a
+   38  docker ps -a -f status=Exited
+   39  docker ps -a -f status=exited
+   40  docker rm$(docker ps -a -f status=exited)
+   41  docker rm $(docker ps -a -f status=exited)
+   42  docker ps -a
+   43  docker ps -a
+   44  exit
+   45  docker info
+   46  docker images
+   47  docker ps -a
+   48  docker run -dit centos
+   49  docker ps -a
+   50  docker rm $(docker ps -a -q)
+   51  docker stop $(docker ps -a -q)
+   52  docker rm $(docker ps -a -q)
+   53  docker ps -a
+   54  docker images
+   55  docker pull centos
+   56  docker run -ti centos bash
+   57  docker images
+   58  docker ps -a
+   59  docker run -ti centos bash
+   60  docker images
+   61  docker rmi $(docker images -a -q
+   62  docker rmi $(docker images -a -q)
+   63  docker ps -a
+   64  docker rm $(docker ps -a -f status=exited -q)
+   65  docker ps -a
+   66  docker rmi $(docker images -a -q)
+   67  docker images
+   68  docker pull centos
+   69  docker run -dit centos
+   70  docker ps -a
+   71  docker exec it 0d317578f607 bash
+   72  docker exec -it 0d317578f607 bash
+   73  vi Dockerfile
+   74  docker build .
+   75  echo "Senthil" > index.html
+   76  docker build .
+   77  docker images
+   78  docker pull bvijaycom/cloud_local:latest 
+   79  docker images
+   80  pwd
+   81  ls -ltr
+   82  docker build -t ptssenthil/dockerone:latest .
+   83  docker build -t ptssenthil/dockerone:v1.1 .
+   84  docker build -t ptssenthil/dockerone:v2.4 .
+   85  docker images
+   86  docker login
+   87  docker push ptssenthil/dockerone:latest
+   88  docker push ptssenthil/dockerone:v1.1
+   89  docker push ptssenthil/dockerone:v2.4
+   90  git clone https://github.com/ptssenthil/dec2019.git
+   91  ls -ltr
+   92  cd dec2019/
+   93  ls -ltr
+   94  touch test
+   95  ls
+   96  git status
+   97  git add *
+   98  git status
+   99  git commit -m "I am just testing..This is snthil"
+  100  git config --global user.email "ptssenthil@gmail.com"
+  101  git config --global user.name "ptssenthil"
+  102  git commit -m "I am just testing..This is snthil"
+  103  ls -ltr
+  104  git status
+  105  git push
+  106  ls
+  107  git log
+  108  history > history.txt
